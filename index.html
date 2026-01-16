@@ -272,13 +272,13 @@
             canvas.height = window.innerHeight;
             
             // Пересчёт размеров игровых объектов
-            paddle.width = canvas.width * 0.2;
-            paddle.height = canvas.height * 0.015;
-            paddle.y = canvas.height - paddle.height - 30;
+            paddle.width = canvas.width * 0.25; // Увеличена с 0.2 до 0.25
+            paddle.height = canvas.height * 0.025; // Увеличена высота с 0.02 до 0.025
+            paddle.y = canvas.height - paddle.height - 80; // Поднята выше с 30 до 80
             paddle.x = canvas.width / 2 - paddle.width / 2;
             paddle.speed = canvas.width * 0.015;
             
-            ball.radius = Math.min(canvas.width, canvas.height) * 0.012;
+            ball.radius = Math.min(canvas.width, canvas.height) * 0.025; // Увеличен с 0.012 до 0.025
             
             calculateBrickSize();
         }
